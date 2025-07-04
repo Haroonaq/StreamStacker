@@ -11,7 +11,7 @@ import { getFunctions } from "firebase/functions";
 
 // Web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCWlrxQ0Zfy36WXdvQ55uJv6-6u8rQk92w",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY as string,
   authDomain: "yt-clone-d72c9.firebaseapp.com",
   projectId: "yt-clone-d72c9",
   appId: "1:881780933747:web:c871305b48a69728149606",
