@@ -21,6 +21,8 @@
 }
 
 .uploadIcon {
+  width: 25px;
+  height: 25px;
   transition: stroke 0.2s;
 }
 

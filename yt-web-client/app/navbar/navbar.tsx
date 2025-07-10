@@ -9,7 +9,6 @@ import { useEffect, useState } from "react";
 import { onAuthStateChangedHelper } from "../firebase/firebase";
 import { User } from "firebase/auth";
 
-
 function NavBar() {
   // Initialize user state
   const [user, setUser] = useState<User | null>(null);
@@ -23,19 +22,22 @@ function NavBar() {
     return () => unsubscribe();
   }, [] /* No dependencies, never rerun */);
 
-
   return (
-  <nav className={styles.nav}>
-    <Link href="/">
-      <Image width={90} height={20}
-        src="/youtube-logo.svg" alt="YouTube Logo"/>
-    </Link>
-    { 
-      user && <Upload />
-    }
-    <SignIn user={user} />
-  </nav>
-);
+    <nav className={styles.nav}>
+      <div style={{ flex: 1, display: 'flex', alignItems: 'center' }}>
+        <Link href="/">
+          <Image height={48} width={0} style={{ width: 'auto', height: 48 }}
+            src="/StreamStacker-logo.svg" alt="StreamStacker Logo"/>
+        </Link>
+      </div>
+      <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        {user && <Upload />}
+      </div>
+      <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
+        <SignIn user={user} />
+      </div>
+    </nav>
+  );
 }
 
 export default NavBar;

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="360" height="60" viewBox="0 0 360 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Purple play button background, matching YouTube logo proportions -->
+  <rect x="5" y="10" rx="12" width="50" height="40" fill="#4C1D95"/>
+  <!-- White play triangle, centered -->
+  <polygon points="27,22 39,30 27,38" fill="#fff"/>
+  <!-- StreamStacker text with big S's, second S nudged just a tiny bit higher -->
+  <text x="60" y="46" fill="#fff" font-family="Arial Black, Arial, sans-serif" font-weight="700" letter-spacing="0">
+    <tspan font-size="40">S</tspan><tspan font-size="32">tream</tspan><tspan font-size="40" dy="1">S</tspan><tspan font-size="32" dy="-1">tacker</tspan>
+  </text>
+</svg> 
