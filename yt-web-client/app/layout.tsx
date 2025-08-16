@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Youtube",
-  description: "Youtube Clone",
+  title: "StreamStacker",
+  description: "StreamStacker - Video Streaming Platform",
 };
 
 export default function RootLayout({
