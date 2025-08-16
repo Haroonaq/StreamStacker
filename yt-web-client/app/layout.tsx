@@ -17,10 +17,7 @@ export const metadata: Metadata = {
   title: "StreamStacker",
   description: "StreamStacker - Video Streaming Platform",
   icons: {
-    icon: [
-      { url: '/icon.svg', type: 'image/svg+xml' },
-      { url: '/favicon.ico', type: 'image/x-icon' }
-    ],
+    icon: '/icon.svg',
   },
 };
 
